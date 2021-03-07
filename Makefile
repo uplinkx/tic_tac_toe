@@ -32,7 +32,7 @@ SRCS = $(addsuffix .c, $(addprefix $(SRC_DIR), $(SRC_NAMES)))
 all: $(NAME)
 
 $(NAME):
-	emcc $(FLAGS) $(INCLUDES) $(PRELOAD) $(LIBRARIES) $(SRCS) -o $(NAME)
+	emcc $(FLAGS) $(INCLUDES) $(PRELOAD) $(LIBRARIES) $(SRCS) $(SKELE_HTML) -o $(NAME)
 
 fclean:
 	rm -rf $(NAME)

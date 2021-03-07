@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/20 18:46:23 by home              #+#    #+#             */
-/*   Updated: 2021/03/06 14:57:38 by home             ###   ########.fr       */
+/*   Updated: 2021/03/06 15:19:11 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,15 @@ void	AI_initialize(t_game_state *game_state)
 	num1 = rand();
 	num2 = rand();
 	if (num1 > num2)
+	{
+		printf("You are player O!\n");
 		game_state->AI_turn = X_TURN;
+	}
 	else
+	{
+		printf("You are player X!\n");
 		game_state->AI_turn = O_TURN;
+	}
 }
 
 int	make_choice_list(int *dest, char *board)

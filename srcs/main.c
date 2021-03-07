@@ -6,7 +6,7 @@
 /*   By: home <home@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/06 02:31:10 by home              #+#    #+#             */
-/*   Updated: 2021/03/06 15:02:48 by home             ###   ########.fr       */
+/*   Updated: 2021/03/06 15:39:42 by home             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,6 @@ void	main_loop(void *v_cxt)
 	draw_game_state(cxt, display);
 	draw_grid(cxt, display);
 	draw_hover_tile(cxt, display);
-
-	// 	draw_win_state();
-	// if (game_state.playing = false)
 
 	SDL_RenderPresent(display->renderer);
 	SDL_RenderClear(display->renderer);
